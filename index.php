@@ -27,7 +27,8 @@ if (@mysqli_num_rows($result) < 1) {
                     <h5 class='card-title'>{$sor['cicaneve']}</h5>
                     <h6 class='card-subtitle mb-2 text-muted'>Fajta: {$sor['cicafajta']}</h6>
                     <p class='card-text'>Kor: {$sor['cicakora']} év</p>
-                    <a href='torles.php?id={$sor['id']}' class='btn btn-danger'>Törlés</a>
+                    <a href='felvitel.php?id={$sor['azonosito']}' class='btn btn-success'>Hozzáadás</a>
+                    <a href='torles.php?id={$sor['azonosito']}' class='btn btn-danger'>Törlés</a>
                 </div>
             </div>
         </div>\n";
