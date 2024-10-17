@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(gray, white);
+    background-repeat: no-repeat;
+}
+
+.card{
+    border: 1px solid black;
+    box-shadow: 5px 5px;
+    margin-top: 5px;
+}
+
+.Felviter-Container{
+    width: 600px;
+    margin: auto;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+a{
+    color: red;
+}
+
+#button{
+    margin-right: 10px;
+}

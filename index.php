@@ -26,7 +26,7 @@ if (@mysqli_num_rows($result) < 1) {
                 <div class='card-body'>
                     <h5 class='card-title'>{$sor['cicaneve']}</h5>
                     <h6 class='card-subtitle mb-2 text-muted'>Fajta: {$sor['cicafajta']}</h6>
-                    <p class='card-text'>Kor: {$sor['cicakora']} év</p>
+                    <p class='card-text'>Kor: {$sor['cicakora']}</p>
                     <a href='felvitel.php?id={$sor['azonosito']}' class='btn btn-success'>Hozzáadás</a>
                     <a href='torles.php?id={$sor['azonosito']}' class='btn btn-danger'>Törlés</a>
                 </div>
@@ -43,7 +43,7 @@ if (@mysqli_num_rows($result) < 1) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cicák</title>
-
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -51,7 +51,7 @@ if (@mysqli_num_rows($result) < 1) {
 <body>
 
 <!-- nav -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light ">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -69,7 +69,7 @@ if (@mysqli_num_rows($result) < 1) {
 
     <form class="form-inline my-2 my-lg-0 ml-auto" method="post">
       <input class="form-control mr-sm-2" type="search" id="kifejezes" name="kifejezes" placeholder="Keresés" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+      <button class="btn btn-outline-light my-2 my-sm-0" id="button" type="submit">Keresés</button>
     </form>
   </div>
 </nav>
@@ -78,7 +78,6 @@ if (@mysqli_num_rows($result) < 1) {
 <!-- kártyák-->
 <div class="container mt-4">
     <div class="row justify-content-md-center">
-      
         <?php print $kimenet; ?>
     </div>
 </div>

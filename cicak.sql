@@ -11,3 +11,6 @@ INSERT INTO cicak (azonosito, cicafoto, cicaneve, cicafajta, cicakora) VALUES
 (1, 'cirmi.jpg', 'Cirmi', 'Házi macska', '3 hetes'),
 (2, 'picur.jpg', 'Picur', 'Házi macska', '4 hetes'),
 (3, 'pöttöm.jpg', 'Pöttöm', 'Házi macska', '2 hetes');
+
+
+
